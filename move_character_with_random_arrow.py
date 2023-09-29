@@ -22,3 +22,11 @@ def handle_events():
             running = False
         elif event.type == SDL_KEYDOWN and event.key == SDLK_ESCAPE:
             running = False
+
+def character_image(z) :
+    character.clip_draw(frame * 100, z, 100, 100, x, y)
+
+running = True
+x = 1280 // 2
+y = 1024 // 2
+frame = 0
